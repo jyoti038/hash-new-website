@@ -182,22 +182,53 @@ const HeroSection = () => {
               className='object-contain object-bottom'
             />
           </div>
+          {/* Hash Logo above Scroll */}
+<div className='hidden md:flex absolute bottom-[120px] lg:bottom-[160px] left-1/2 transform -translate-x-1/2 z-30 pointer-events-none'>
+  <Image
+    src='/images/hash-logo.png'
+    alt='Hash For Gamers Logo'
+    width={120}
+    height={120}
+    className='object-contain'
+  />
+</div>
 
-          {/* Scroll Down Indicator - Hide on small mobile */}
-          <div className='hidden md:flex absolute bottom-[30px] lg:bottom-[60px] left-1/2 transform -translate-x-1/2 z-30 flex-col items-center gap-2 pointer-events-none'>
-            <p className='text-white text-xs md:text-sm'>Scroll Down</p>
-            <svg 
-              className='w-5 h-5 md:w-6 md:h-6 text-white animate-bounce' 
-              fill='none' 
-              strokeLinecap='round' 
-              strokeLinejoin='round' 
-              strokeWidth='2' 
-              viewBox='0 0 24 24' 
-              stroke='currentColor'
-            >
-              <path d='M19 14l-7 7m0 0l-7-7m7 7V3'></path>
-            </svg>
-          </div>
+
+         {/* Scroll Down Indicator */}
+<div className='hidden md:flex absolute bottom-[30px] lg:bottom-[60px] left-1/2 transform -translate-x-1/2 z-30 flex-col items-center gap-3 pointer-events-none'>
+  
+  {/* Scroll Down Button Image */}
+  <Image
+    src='/images/Scroll Down.png'
+    alt='Scroll Down'
+    width={90}
+    height={20}
+    className='object-contain'
+  />
+
+  {/* Vector Arrow */}
+  <div className="flex flex-col items-center gap-0.2 animate-bounce">
+  <Image
+    src="/images/Vector 5.png"
+    alt="Scroll Arrow 5"
+    width={22}
+    height={22}
+  />
+  <Image
+    src="/images/Vector 4.png"
+    alt="Scroll Arrow 4"
+    width={22}
+    height={22}
+  />
+  <Image
+    src="/images/Vector 3.png"
+    alt="Scroll Arrow 3"
+    width={22}
+    height={22}
+  />
+  </div>
+</div>
+
 
         </div>
       </div>
